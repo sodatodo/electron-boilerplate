@@ -1,0 +1,26 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "skipLibCheck": true,
+      "module": "commonjs",
+      "target": "ES5",
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+          "~/*": ["app/*"] 
+      }
+    },
+    "include": [
+      "./app/",
+      "./style/",
+      "./src",
+      "./package.json"
+    ],
+    "exclude": [
+      "./node_modules/"
+    ],
+    "references": [],
+    
+  }
+  
